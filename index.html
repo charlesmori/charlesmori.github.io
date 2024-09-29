@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charles Mori</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e54b465117.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -39,7 +40,7 @@
             <div>
                 <h1>Hello,</h1>
                 <h1>i am a <span class="typed-text"></span></h1>
-                <a href="#portfolio" type="button" class="btn">Portfolio</a>
+                <a href="https://www.linkedin.com/in/charles-mori" type="button" class="btn">Linkedin</a>
             </div>
         </div>
     </section>
@@ -57,7 +58,7 @@
             <h1 class="section-title">About <span>Me</span></h1>
             <h2>Web Developer</h2>
             <p>Junior Web developer specializing in front end develepment experienced with all stages of the development cycle for dynamic web projects. well-versed in numerous programming languages including HTML5, PHP, JavaScript, CSS, MySQL. strong background in portfolio management and customer relations.</p>
-            <a href="#" class="btn">Download Resume</a>
+            <a href="https://alison.com/cv/shared/24754?utm_campaign=cv_page&utm_source=direct&utm_medium=social" class="btn">Download Resume</a>
         </div>
     </div>
 </section>
@@ -191,12 +192,6 @@
                 <h2>Address</h2>
                 <div class="address">
                     <div class="address-item">
-                        <div class="icon"><img src="icons/address.png" alt=""></div>
-                        <div class="address-info">
-                            <p>Plot 32 YB Building Hai Atlabara Opposite Gemtel Building Juba South Sudan</p>
-                        </div>
-                    </div>
-                    <div class="address-item">
                         <div class="icon"><img src="icons/phone.png" alt=""></div>
                         <div class="address-info">
                             <p><a href="tel:+211920620200">+211 (0) 926129979</a></p>
@@ -211,6 +206,7 @@
                             <p><a href="mailto:charlesmori12@yahoo.com" subject="Message form your Website">charlesmori12@yahoo.com</a></p>
                         </div>
                     </div>
+                    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="charles-mori" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ss.linkedin.com/in/charles-mori?trk=profile-badge">Charles Mori</a></div>
                 </div>
             </div>
         </div>
@@ -230,6 +226,7 @@
         <div class="social-icon">
             <div class="social-item">
                 <a href="#"><img src="./icons/facebook.png" alt="facebook"></a>
+                <i class="fa-brands fa-facebook"></i>
             </div>
             <div class="social-item">
                 <a href="#"><img src="./icons/twitter.png" alt="twitter"></a>
@@ -241,7 +238,7 @@
                 <a href="#"><img src="./icons/linkedIn.png" alt="linkedIn"></a>
             </div>
         </div>
-        <p>Copyright &copy; 2020 | Charles Mori | All right reserved</p>
+        <p>Copyright &copy; <span id="year"></span> | Charles Mori | All right reserved</p>
     </div>
 </section>
 
@@ -258,8 +255,11 @@ var typed = new Typed('.typed-text', {
     showCursor: true
 });
 
+ const d = new Date().getFullYear();    
+document.getElementById("year").innerHTML = d;
 
  </script>
  <script src="./js/app.js"></script>
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </body>
 </html>
